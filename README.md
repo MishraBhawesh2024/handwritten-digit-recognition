@@ -15,7 +15,9 @@ This mini-project is on recognition of Handwritten Digits and the original datas
 
 5. Using Support Vector Classifier (SVC) to predict the output -- comparison with the KNN and DT classifiers.
 
-6. Conclusions:
+6. Use Convolutional Neural Networks to predict the labels -- we are using 2D convolutional kernels and BatchNormalization at every layer for better performance. We use two different optimizers to compare performance - adam and RMSprop - both of which have comparable performance. 
+
+8. Conclusions:
    1. **Reasoning behind doing PCA** - Images of the Handwritten digits from MNIST digits, are more similar to one another than different. For instance, there are 28 x 18 = 784 pixels in each images, but most of those pixels are pitch black and do not contain any information about the digits. In other words, not all 784 features are relevant. 
 
    2. **Reasoning for choosing 78 Principal Components** - In light of the above, we used PCA for feature extraction. We made the choice that the information about the digit is stored in about 10% of the pixels. Hence, we isolated 78 principal components, after standardization, and projected the data onto these principal directions. 
@@ -24,7 +26,7 @@ This mini-project is on recognition of Handwritten Digits and the original datas
 
    4. **Classification** - We predicted the test data using three different classifiers : (a) KNN classifier (b) Decision Tree classifier and (3) Support Vector classifier (SVC). The test data contained 28000 different handwritten digits. 
 
-   5. **Performance** - The SVC classifier worked the best with **98.03%** accuracy, whereas the DT classifier was clearly the worst with its accuracy theoretically bounded above by **86%**. The KNN classifier worked very well too with its accuracy **97.27%**. 
+   5. **Performance** - The SVC classifier worked the best with **98.03%** accuracy, whereas the DT classifier was clearly the worst with its accuracy theoretically bounded above by **86%**. The KNN classifier worked very well too with its accuracy **97.27%**. The best accuracy came from the CNN model (99% each with adam and RMSprop optimizer). 
 
-   **The conclusion seems to be that both SVC and DT classifier work well for the purpose of recognizing handwritten digits from the MNIST dataset and the percentage accuracy for both of them is quite impressive.**
+   **The conclusion seems to be that both SVC and DT classifier work well for the purpose of recognizing handwritten digits from the MNIST dataset and the percentage accuracy for both of them is quite impressive. However, pushing the accuracy to its maximum is easier with CNN.**
  
