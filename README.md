@@ -1,7 +1,7 @@
 # handwritten-digit-recognition
-# Implementation and Comparison of various ML algorithms in detecting handwritten digits from Images
+# Implementation and Comparison of various ML and CNN algorithms in detecting handwritten digits from Images
 
-This mini-project is on recognition of Handwritten Digits and the original dataset is the MNIST handwritten digit dataset, which was taken from https://www.kaggle.com/competitions/digit-recognizer, which is part of a competition. The results are evaluated at the Kaggle website only. The goal of this project is simple -- to efficiently recognize as many handwritten digits as possible and compare the performance of various methods.
+This mini-project is on recognition of Handwritten Digits and the original dataset is the MNIST handwritten digit dataset, which was taken from https://www.kaggle.com/competitions/digit-recognizer, which is part of a competition. The results are evaluated at the Kaggle website only. The goal of this project is simple -- to efficiently recognize as many handwritten digits as possible and compare the performance of various methods. This project was first started to solidify my theoretical learning, which gradually led to a sustained effort for improvement in accuracy. 
 
 # Table of Contents
 
